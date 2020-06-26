@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Prova ativ 04</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+</head>
+<script type="text/javascript" src="js/requisicoes.js"></script>
+<body>
+	<form method="get" action="https://jsonplaceholder.typicode.com/comments">
+		<input type="text" name="nome" placeholder="digite seu Nome aqui">
+		<input type="e-mail" name="email" placeholder="Digite seu e-mail">
+		<button onClick="submeterFormulario()" class="btn btn-success">Submetido</button> 
+	</form>
+
+	<div class="container fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<table class="table stripped" id="tabeladedados">
+					<tr>
+						<th>id</th>
+						<th>nome</th>
+						<th>Email</th>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
